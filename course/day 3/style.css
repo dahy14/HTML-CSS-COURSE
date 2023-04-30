@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #797b84;
+  position: relative;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #edbbb4;
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* for animation purposes */
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.square:focus {
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.s1 {
+  background-color: #edbbb4;
+}
+
+.s2 {
+  background-color: #edd2e0;
+  width: 150px;
+  height: 150px;
+}
+
+.s3 {
+  background-color: #dbabbe;
+  width: 100px;
+  height: 100px;
+}

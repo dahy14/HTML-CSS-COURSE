@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,20 +7,37 @@
 
 .container {
   width: 100%;
-  height: auto;
+  background-color: #0a0908;
   display: flex;
   flex-direction: column;
+
   color: #fff;
-  background-color: #0a0a0a;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
+  line-height: 2;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  line-height: 3;
+  font-style: italic;
+  font-weight: 100;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #ff4b4b;
+  text-decoration: none;
 }
 
 .square {
-  width: 20em;
-  height: 20em;
-
   outline: 1px solid white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
 }

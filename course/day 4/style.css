@@ -3,31 +3,75 @@
   margin: 0;
   padding: 0;
 }
-/* phone screen */
-body {
-  background-color: #8e94f2;
+/* phone screen, mobile first*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
 }
-body::before {
-  content: "#8e94f2";
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: #fff;
+}
+.footer {
+  width: 100%;
+
+  background-color: #facece;
+  position: absolute;
+
+  left: 0;
+  /* top: 90%; */
+  bottom: 0;
+}
+
+.cont {
+  height: 90%;
+  display: inline-flex;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #f7dddd;
+}
+
+.sidebar {
+  display: none;
 }
 
 /* tablet screen */
 @media (min-width: 40em) {
-  body {
-    background-color: #dab6fc;
+  .sidebar {
+    display: inline-flex;
+    width: 30%;
+    height: 100%;
+    background-color: #bbadff;
   }
-
-  body::before {
-    content: "#dab6fc";
+  .sidebar::after {
+    content: " Tablet";
   }
 }
 
-/* larger screen */
+/* large screen */
 @media (min-width: 65em) {
-  body {
-    background-color: #bbadff;
+  .main {
+    width: 100%;
   }
-  body::before {
-    content: "#bbadff";
+
+  .text {
+    width: 60%;
+    padding-left: 13em;
+  }
+
+  .sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #ffadef;
+  }
+  .sidebar::after {
+    content: " Laptop";
   }
 }

@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* phone screen */
+body {
+  background-color: #8e94f2;
+}
+body::before {
+  content: "#8e94f2";
+}
+
+/* tablet screen */
+@media (min-width: 40em) {
+  body {
+    background-color: #dab6fc;
+  }
+
+  body::before {
+    content: "#dab6fc";
+  }
+}
+
+/* larger screen */
+@media (min-width: 65em) {
+  body {
+    background-color: #bbadff;
+  }
+  body::before {
+    content: "#bbadff";
+  }
+}

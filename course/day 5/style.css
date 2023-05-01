@@ -3,3 +3,23 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #0a0a0a;
+}
+
+.square {
+  width: 20em;
+  height: 20em;
+
+  outline: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

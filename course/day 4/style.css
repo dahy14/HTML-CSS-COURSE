@@ -31,7 +31,7 @@
 }
 
 .cont {
-  height: 90;
+  /* height: 90; */
   display: inline-flex;
 }
 
@@ -50,7 +50,7 @@
   .sidebar {
     display: block;
     width: 30%;
-    height: auto;
+    /* height: auto; */
     background-color: #0d090a;
   }
 }
